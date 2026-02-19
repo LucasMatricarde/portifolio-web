@@ -38,7 +38,7 @@ jobs:
         uses: actions/download-artifact@master
         with:
           name: build
-          path: dist/portifolio-web/
+          path: dist/portifolio-web/browser/
 
       - name: Display structure of downloaded files
         run: ls -R
