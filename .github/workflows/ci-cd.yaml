@@ -25,7 +25,7 @@ jobs:
         run: npm run build
 
       - name: Save build
-        uses: actions/updload-artifact@master
+        uses: actions/upload-artifact@master
         with:
           name: build
           path: dist/portifolio-web/
@@ -52,4 +52,4 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          aws s3 sync ./dist/portifolio-web/ s3://portifolio-lucas-matricarde/
+          aws s3 sync ./dist/portifolio-web s3://portifolio-lucas-matricarde/
